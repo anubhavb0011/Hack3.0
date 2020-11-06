@@ -1,0 +1,32 @@
+.header {
+    
+    height: 85vh;
+
+    /* background-color: red; */
+    background-image: 
+    //linear-gradient( to right bottom, rgba(250, 250, 250, .9), rgba(238, 238, 238, .21)) 
+    //, 
+    url("../img/Organize.png") ;
+
+    background-position: top;
+    background-size: cover;
+   // -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    //clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+    &__logo-box {
+        padding: 2rem;
+    }
+    
+    &__logo {
+        height: 5rem;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 25%;
+        left: 12%;
+        //width: 30%;
+       // transform: translate(-50%, -50%);
+        text-align: left;
+    }
+}

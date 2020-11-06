@@ -1,0 +1,42 @@
+.navigation{
+    &--row{
+        width: 100%;
+        display: inline-block;
+    }
+    &__nav{
+       width: 100%;
+
+    }
+    &__list{
+        list-style: none;
+       float: right;
+    }
+    &__item{
+        display: inline-block;
+        margin: 2.0rem;
+    }
+    &__link:link,
+    &__link:visited{
+        &:not(.btn){
+            padding: 1rem 0;
+        }
+       
+        text-decoration: none;
+         color: $color-primary-2;
+        font-weight: 510; 
+        font-size: 1.7rem;
+        border-bottom: 2px solid transparent;
+        transition: all 0.4s;
+    }
+
+    &__link:hover,
+    &__link:active{
+        &:not(.btn){
+            padding: 1rem 0;
+        }
+        border-bottom: 2px solid $color-primary;
+        // box-shadow: 0 1px 1px rgba($color-black, 1);
+    }
+
+
+}
