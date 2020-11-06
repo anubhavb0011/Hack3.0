@@ -59,6 +59,14 @@
 
     }
 
+
+    &--prescription{
+        @include respond(tab-port){
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+
    
 
 }

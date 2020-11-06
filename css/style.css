@@ -6,6 +6,15 @@
 html {
   font-size: 62.5%;
   padding: 1rem; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -45,6 +54,8 @@ body {
     background-image: linear-gradient(#00e676, #303f9f);
     -webkit-background-clip: text;
     color: transparent; }
+  .heading-secondary--green {
+    color: #00e676; }
 
 .heading-tertiary {
   font-size: 3rem;
@@ -54,6 +65,11 @@ body {
   .heading-tertiary__blue {
     color: #303f9f; }
   .heading-tertiary__green {
+    color: #00e676; }
+  .heading-tertiary--prescription {
+    text-align: left;
+    padding: 4rem;
+    font-size: 3rem;
     color: #00e676; }
 
 .paragraph {
@@ -76,6 +92,9 @@ body {
 .u-margin-top-med {
   margin-top: 4rem !important;
   padding-top: 5rem !important; }
+
+.u-margin-top-big {
+  margin-top: 5rem; }
 
 .btn, .btn:link, .btn:visited {
   word-spacing: 3px;
@@ -115,6 +134,11 @@ body {
   transition: all 0.2s, border 0.2s, color 0.2s; }
   .btn--border:hover, .btn--border:active {
     background-color: #00e676; }
+
+@media (max-width: 56.25em) {
+  .btn--prescription {
+    text-align: center;
+    margin-top: 2rem; } }
 
 .feature-box {
   background-color: rgba(247, 247, 247, 0.8);
@@ -314,6 +338,38 @@ body {
   .navigation__link:hover:not(.btn), .navigation__link:active:not(.btn) {
     padding: 1rem 0; }
 
+.upload-img-box-img {
+  font-size: 4rem;
+  height: 25rem;
+  position: absolute;
+  top: 50%;
+  left: 70%; }
+  @media (max-width: 75em) {
+    .upload-img-box-img {
+      display: none; } }
+
+.prescription {
+  padding: 1rem 4rem;
+  border: solid 1px rgba(48, 63, 159, 0.8);
+  border-radius: 5rem;
+  width: 70%;
+  background-color: #eee; }
+  @media (max-width: 75em) {
+    .prescription {
+      border-radius: 5px;
+      width: 100%; } }
+  .prescription-box {
+    text-align: center; }
+  .prescription-date {
+    display: inline-block;
+    margin-right: 50%;
+    text-align: center; }
+    @media (max-width: 56.25em) {
+      .prescription-date {
+        margin: 0;
+        display: block;
+        padding: 1.5rem; } }
+
 .section-about {
   background-color: rgba(247, 247, 247, 0.8);
   padding: 0rem 0rem 5rem 0; }
@@ -321,3 +377,9 @@ body {
     padding: 0rem 15rem; }
   .section-about__para {
     text-align: center; }
+
+section-upload {
+  position: relative; }
+
+.upload-file {
+  padding: 4rem; }

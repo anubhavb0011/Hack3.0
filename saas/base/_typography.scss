@@ -50,6 +50,11 @@ body {
         -webkit-background-clip: text;
         color: transparent;
     }
+    &--green{
+        color: $color-primary;
+    }
+
+
 }
 
 .heading-tertiary{
@@ -64,6 +69,13 @@ body {
         color: $color-primary-2;
     }
     &__green{
+        color: $color-primary;
+    }
+
+    &--prescription{
+        text-align: left;
+        padding: 4rem;
+        font-size: 3rem;
         color: $color-primary;
     }
 }
