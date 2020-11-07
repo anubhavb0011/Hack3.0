@@ -40,8 +40,7 @@
 
 
     &__input{
-        box-shadow: 0 1rem 1rem rgba($color-black, .1);
-        border: 10px solid  black;
+        // box-shadow: 0 1rem 1rem rgba($color-black, .1);
         font-size: 1.5rem;
         font-family: inherit;
         color: inherit;
@@ -53,7 +52,7 @@
         border-bottom: 3px solid  transparent;
         display: block;
         transition: all .3s;
-
+        border-bottom: 2px solid $color-gray-dark;
         &:focus{
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
@@ -69,6 +68,68 @@
             color: $color-grey-light-3
         }
 
+        &--track-fat{
+            &:focus{
+                // &-fat{
+                    border-bottom: 3px solid rgba(255, 0,0,0.3);
+                // }
+            }
+        }
+
+        &--track-bmi{
+            &:focus{
+                // &-fat{
+                    border-bottom: 3px solid  rgba(255,120,255,0.3);
+                // }
+            }
+        }
+        &--track-weight{
+            &:focus{
+                // &-fat{
+                    border-bottom: 3px solid  rgba(54,162,235,0.3);
+                // }    
+            }
+        }
+        &--track-sugar{
+            &:focus{
+                // &-fat{
+                    border-bottom: 3px solid  rgba(0,225,120,0.3);
+            //   }
+                // }
+            }
+        }
+        &--track-bp{
+            &:focus{
+                // &-fat{
+                    border-bottom: 3px solid  rgba(120,120,120,0.3);
+                // }
+            }
+        }
+
+       
+
+        // &--track{
+        //     &:focus:invalid{
+        //         box-shadow: none;
+           
+
+               
+        //         &-bmi{
+        //             border: 2px solid
+        //         }
+        //         &-weight{
+        //             border: 2px solid 
+        //         }
+        //         &-sugar{
+        //             border: 2px solid 
+        //         &-bp{
+        //             border: 2px solid 
+        //     }
+        //     }
+            
+        // }
+            
+
         
     }
 
@@ -79,6 +140,8 @@
         margin-top: .7rem;
         display: block;
         transition: all .3s;
+
+      
     }
 
     &__input:placeholder-shown + &__label{

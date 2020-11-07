@@ -32,10 +32,10 @@ body {
     color: #00e676; }
   .heading-primary--main--blue {
     font-size: 5rem;
-    color: #303f9f; }
+    color: #007bff; }
   .heading-primary--colored {
     font-size: 3rem;
-    background-image: linear-gradient(#00e676, #303f9f);
+    background-image: linear-gradient(#00e676, #007bff);
     -webkit-background-clip: text;
     color: transparent; }
 
@@ -51,7 +51,7 @@ body {
     transform: scale(1.1);
     text-shadow: .5rem; }
   .heading-secondary--colored {
-    background-image: linear-gradient(#00e676, #303f9f);
+    background-image: linear-gradient(#00e676, #007bff);
     -webkit-background-clip: text;
     color: transparent; }
   .heading-secondary--green {
@@ -63,7 +63,7 @@ body {
   text-transform: uppercase;
   text-align: center; }
   .heading-tertiary__blue {
-    color: #303f9f; }
+    color: #007bff; }
   .heading-tertiary__green {
     color: #00e676; }
   .heading-tertiary--prescription {
@@ -183,8 +183,6 @@ body {
     text-align: center;
     padding: 4rem 0 3rem 0; }
   .form__input {
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-    border: 10px solid  black;
     font-size: 1.5rem;
     font-family: inherit;
     color: inherit;
@@ -195,7 +193,8 @@ body {
     border: none;
     border-bottom: 3px solid  transparent;
     display: block;
-    transition: all .3s; }
+    transition: all .3s;
+    border-bottom: 2px solid #777; }
     .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -204,6 +203,16 @@ body {
       border-bottom: 3px solid #ffb900; }
     .form__input::-webkit-input-placeholder {
       color: lightgray; }
+    .form__input--track-fat:focus {
+      border-bottom: 3px solid rgba(255, 0, 0, 0.3); }
+    .form__input--track-bmi:focus {
+      border-bottom: 3px solid rgba(255, 120, 255, 0.3); }
+    .form__input--track-weight:focus {
+      border-bottom: 3px solid rgba(54, 162, 235, 0.3); }
+    .form__input--track-sugar:focus {
+      border-bottom: 3px solid rgba(0, 225, 120, 0.3); }
+    .form__input--track-bp:focus {
+      border-bottom: 3px solid rgba(120, 120, 120, 0.3); }
   .form__label {
     font-size: 1.2rem;
     font-weight: 500;
@@ -222,8 +231,19 @@ body {
   height: 40rem; }
 
 .background-color-heading {
-  background-image: linear-gradient(to right, rgba(0, 230, 118, 0.5), rgba(48, 63, 159, 0.9));
+  background-image: linear-gradient(to right, rgba(0, 230, 118, 0.5), rgba(0, 123, 255, 0.9));
   padding: 2rem 0rem; }
+
+.track {
+  position: relative; }
+  .track-box {
+    padding: 2rem;
+    position: absolute;
+    width: 25%;
+    box-shadow: 0 0.2rem 1.5rem rgba(0, 123, 255, 0.5);
+    border-radius: 3px; }
+    .track-box-form {
+      padding: 2rem; }
 
 .footer {
   background-color: #333;
@@ -325,7 +345,7 @@ body {
 
 .navigation__link:link, .navigation__link:visited {
   text-decoration: none;
-  color: #303f9f;
+  color: #007bff;
   font-weight: 510;
   font-size: 1.7rem;
   border-bottom: 2px solid transparent;
@@ -350,7 +370,7 @@ body {
 
 .prescription {
   padding: 1rem 4rem;
-  border: solid 1px rgba(48, 63, 159, 0.8);
+  border: solid 1px rgba(0, 123, 255, 0.8);
   border-radius: 5rem;
   width: 70%;
   background-color: #eee; }
