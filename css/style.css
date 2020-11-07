@@ -235,15 +235,28 @@ body {
   padding: 2rem 0rem; }
 
 .track {
-  position: relative; }
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media (max-width: 56.25em) {
+    .track {
+      flex-direction: column; } }
   .track-box {
     padding: 2rem;
-    position: absolute;
     width: 25%;
     box-shadow: 0 0.2rem 1.5rem rgba(0, 123, 255, 0.5);
     border-radius: 3px; }
+    @media (max-width: 56.25em) {
+      .track-box {
+        width: 60%; } }
     .track-box-form {
       padding: 2rem; }
+  .track-map {
+    height: 50vh;
+    background-color: red; }
+
+.form-group {
+  display: inline-block !important; }
 
 .footer {
   background-color: #333;
